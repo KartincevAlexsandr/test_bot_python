@@ -1,1 +1,1 @@
-# test_bot_python
+Пишем блта для telegramm на python
