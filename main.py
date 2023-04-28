@@ -12,12 +12,12 @@ f.close()
 # Создаем бота
 bot = telebot.TeleBot('Здесь твой токен, полученный от @botfather')
 # Команда start
-@bot.message_handler(commands=["start"])
+@bot.message_handler(commands=["dsa"])
 def start(m, res=False):
         # Добавляем две кнопки
         markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
-        item1=types.KeyboardButton("Факт")
-        item2=types.KeyboardButton("Поговорка")
+        item1=types.KeyboardButton("fact")
+        item2=types.KeyboardButton("asd")
         markup.add(item1)
         markup.add(item2)
         bot.send_message(m.chat.id, 'Нажми: \nФакт для получения интересного факта\nПоговорка — для получения мудрой цитаты ',  reply_markup=markup)
