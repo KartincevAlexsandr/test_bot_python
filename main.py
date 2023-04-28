@@ -5,10 +5,7 @@ from telebot import types
 f = open('data/facts.txt', 'r', encoding='UTF-8')
 facts = f.read().split('\n')
 f.close()
-# Загружаем список поговорок
-f = open('data/thinks.txt', 'r', encoding='UTF-8')
-thinks  = f.read().split('\n')
-f.close()
+
 # Создаем бота
 bot = telebot.TeleBot('Здесь твой токен, полученный от @botfather')
 # Команда start
